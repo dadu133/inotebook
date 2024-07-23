@@ -54,7 +54,6 @@ const Notes = (props) => {
         }
     }
     const handleClick2 = async(e) => {
-        console.log("hellp");
         let update=await editNote(note.id, note.etitle, note.edescription, note.etag)
         if(update.success===undefined){
             props.setalert("Internal error Occurs");
