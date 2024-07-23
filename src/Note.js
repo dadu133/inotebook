@@ -171,7 +171,7 @@ const Notes = (props) => {
 
             <h2 className='text-gray-500 text-3xl max-md:m-3 m-3' >Your Notes</h2>
              
-            {notes.length==0&&"No notes to display"}
+            {notes.length===0 && "No notes to display"}
             {notes.map((note) => {
                 return <NoteItem key={note._id} id={note._id} show={updateNote} title={note.title} deleteNote={deleteNote} description={note.description} note={note} />
             })}
