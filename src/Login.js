@@ -1,8 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'
-let h=process.env.host;
-console.log("The host is " +h)
 export default function Login(props) {
   let history = useNavigate();
   const [credential, setCredential] = useState({ email: "", password: "" })
