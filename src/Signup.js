@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Signup(props) {
   let history = useNavigate();
   const [credential, setCredential] = useState({ email: "", password: "", name: "", cpassword: "" })
-  const host = "http://localhost:4000";
+  const host = "https://backend-2-82kk.onrender.com";
   const handlesubmit = async (e) => {
 
     e.preventDefault();

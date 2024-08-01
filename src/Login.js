@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'
+let h=process.env.host;
+console.log("The host is " +h)
 export default function Login(props) {
   let history = useNavigate();
   const [credential, setCredential] = useState({ email: "", password: "" })
@@ -8,7 +10,7 @@ export default function Login(props) {
     setCredential({ ...credential, [e.target.name]: e.target.value })
 
   }
-  const host = "http://localhost:4000"
+  const host = "https://backend-2-82kk.onrender.com"
   const handlesubmit = async (e) => {
 
     e.preventDefault();

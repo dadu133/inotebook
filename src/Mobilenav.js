@@ -7,7 +7,7 @@ import { FiAlignJustify } from 'react-icons/fi';
 import { RxCross2 } from 'react-icons/rx';
 export default function Mobilenav(props) {
   const [toggle, setToggle] = useState({})
-  const host = "http://localhost:4000/"
+  const host = "https://backend-2-82kk.onrender.com"
   const userdetails2 = async () => {
 
     const response = await fetch(`${host}/api/auth/getuser`, {

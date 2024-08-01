@@ -11,7 +11,7 @@ export default function Navbar() {
     setOpenMenu(!openmenu);
   }
   const [toggle, setToggle] = useState({})
-  const host = "http://localhost:4000"
+  const host = "https://backend-2-82kk.onrender.com"
   const userdetails = async () => {
 
     const response = await fetch(`${host}/api/auth/getuser`, {
@@ -50,7 +50,7 @@ export default function Navbar() {
     });
 
   }
-
+  
   let history = useNavigate();
   const handlelogout = () => {
     localStorage.removeItem('token')
@@ -78,6 +78,7 @@ export default function Navbar() {
 
         </div>
       </div>
+      
       <div id="myModal" className="modal">
         <div className="modal-content">
           <span className="close" id="closeModalBtn"><RxCross2 style={{ fontSize: '2rem' }}></RxCross2></span>
@@ -90,7 +91,7 @@ export default function Navbar() {
             <hr className='h-1 bg-zinc-300'></hr>
             <p className='my-2 text-xl'><span className='font-bold'>User Email:</span> {toggle.email}</p>
             <hr className='h-1 bg-zinc-300'></hr>
-            <p className='my-2 text-xl'><span className='font-bold'>Date: </span>{toggle.date}</p>
+            <p className='my-2 text-xl'><span className='font-bold'>User Created: </span>{toggle.date}</p>
 
           </div>
         </div>

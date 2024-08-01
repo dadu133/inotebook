@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Notes = (props) => {
     let ref1=useRef();
     let history = useNavigate();
-    const host = "http://localhost:4000"
+    const host = "https://backend-2-82kk.onrender.com"
     useEffect(() => {
         if (localStorage.getItem('token')) {
 
